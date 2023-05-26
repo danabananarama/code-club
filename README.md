@@ -30,3 +30,21 @@ tftpboot $ chmod 766 foo.txt
     request
 [x] Handle ack messages without blowing up the server
 [ ] Confirm ack corresponds to last sent data
+    C: Give me foo.txt
+    S: Here it is "Banana" that was chunk 9
+    C: Thanks I got chunk 3
+    S: WTF MAN
+[ ] Do some wireshark to see that each connection is using a unique set of ports
+
+## How to handle state?
+
+* State monad
+  * Still needs state, it would just sit outside of the business logic
+* Mutable instances of a class via getters/setters
+* State machine
+* Global mutable state with like a Hash object
+* SQLite
+* Just pass the state around
+  * If we did it with recursion it would blow the stack because of no TCO
+* Cram more data into the protocol
+  * Into an ack....
