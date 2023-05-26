@@ -26,5 +26,7 @@ tftpboot $ chmod 766 foo.txt
 
 ## TODO
 
-[x] Send a one packet file from the server to a client in response to a read request
-[ ] Handle ack messages without blowing up the server
+[x] Send a one packet file from the server to a client in response to a read
+    request
+[x] Handle ack messages without blowing up the server
+[ ] Confirm ack corresponds to last sent data
