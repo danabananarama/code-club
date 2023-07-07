@@ -26,15 +26,15 @@ tftpboot $ chmod 766 foo.txt
 
 ## TODO
 
-[x] Send a one packet file from the server to a client in response to a read
+- [x] Send a one packet file from the server to a client in response to a read
     request
-[x] Handle ack messages without blowing up the server
-[ ] Confirm ack corresponds to last sent data
-    C: Give me foo.txt
-    S: Here it is "Banana" that was chunk 9
-    C: Thanks I got chunk 3
-    S: WTF MAN
-[ ] Do some wireshark to see that each connection is using a unique set of ports
+- [x] Handle ack messages without blowing up the server
+- [ ] Confirm ack corresponds to last sent data
+      - C: Give me foo.txt
+      - S: Here it is "Banana" that was chunk 9
+      - C: Thanks I got chunk 3
+      - S: WTF MAN
+- [ ] Do some wireshark to see that each connection is using a unique set of ports
 
 ## How to handle state?
 
