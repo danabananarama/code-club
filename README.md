@@ -30,10 +30,10 @@ tftpboot $ chmod 766 foo.txt
     request
 - [x] Handle ack messages without blowing up the server
 - [ ] Confirm ack corresponds to last sent data
-      - C: Give me foo.txt
-      - S: Here it is "Banana" that was chunk 9
-      - C: Thanks I got chunk 3
-      - S: WTF MAN
+  - C: Give me foo.txt
+  - S: Here it is "Banana" that was chunk 9
+  - C: Thanks I got chunk 3
+  - S: WTF MAN
 - [ ] Do some wireshark to see that each connection is using a unique set of ports
 
 ## How to handle state?
